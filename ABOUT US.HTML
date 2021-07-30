@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+<head> 
+
+
+	<!--- a script to get the location of the user --->
+	<script type="text/javascript"> 
+   
+         function showLocation(position) { 
+            var latitude = position.coords.latitude; 
+            var longitude = position.coords.longitude; 
+            alert("Latitude : " + latitude + " Longitude: " + longitude); 
+         } 
+
+
+ 
+ 
+         function errorHandler(err) { 
+            if(err.code == 1) { 
+               alert("Error: Access is denied!"); 
+            } 
+             
+            else if( err.code == 2) { 
+               alert("Error: Position is unavailable!"); 
+            } 
+         } 
+    
+         function getLocation(){ 
+ 
+            if(navigator.geolocation){ 
+               // timeout at 60000 milliseconds (60 seconds) 
+               var options = {timeout:60000}; 
+               navigator.geolocation.getCurrentPosition(showLocation, errorHandler, options); 
+            } 
+             
+            else{ 
+               alert("Sorry, browser does not support geolocation!"); 
+            } 
+         } 
+    
+      </script> 
+   <font size="+3"><p style="text-align:center"><b>GEOLOCATION</b><br>
+	
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15846.880241126148!2d39.22126924783936!3d-6.803869732896974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2stz!4v1580048706476!5m2!1sen!2stz" width="800" height="650" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</font>
+
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width">
+	<title>about us</title>
+	<link rel="stylesheet" type="text/css" href="ABOUT US.css">
+</head>
+<body>
+	<header >
+         <div class="container">
+		<div id="nood1">
+			<h1><span class="highlight">ABOUT</span> US </h1>
+		</div>
+	
+	    <nav>
+		  <footer>	 
+			<ul>
+			<li><a href="home.html">HOME </a></li>
+			<li><a href="TTB.HTML">TTB</a></li>
+			<li><a href="NATIONAL PARKS.html"> NATIONAL_PARKS </a></li>
+			<li><a href="TZISLAND.HTML">ATTRACTIVE_ISLANDS </a></li>
+			<li><a href="TZMUSEUM.HTML">NATIONAL_MUSEUMS </a></li>
+			<li><a href="GAME RESERVE.html">GAME_RESERVES </a></li>
+			<li><a href="BOOKING.HTML"> BOOKING </a></li>
+			<li><a href="ABOUT US.HTML"> ABOUT_US </a></li>
+			</footer>
+			</ul>
+		
+		</nav>
+		
+			
+		</div>
+	
+	</header>
+
+	<section class="peter">
+		<div>
+			<h1>our mission</h1>
+			<p>the mission of creating this website is to let the world known about Tourism  well, telling the world about the history  feature and other tradiction of the tourist attraction found in Tanzania<br> letting the people accross continets know  the only strong remaind  tourism in Africa  and why the tourism   is  very important
+			 </p>
+			<p>The aim of this website is to make the world know about the severals tourist attractions found in East Africa<br>and also to attract the tourist from different countries all over the world to come in east africa to climb kilimanjaro mountain how maasai people<br></p>
+        <h1>our team</h1>
+		</div>
+	</section>
+    
+	<section id="masai"> 
+    <div class="container">
+    	<div class="simba">
+    		<img src="kim.jpg"width="100"; height="100">
+    		<h3>ALLY WILLY</h3>
+    		<p>Web designer&&developer </p>
+    	</div>
+    	<div class="simba">
+    		<img src="alii.jpg"width="100"; height="100">
+    		<h3>ALLY SULLEY</h3>
+    		<p>Web designer&&developer</p>
+    	</div>
+    	
+	</section>
+	
+	
+	<footer>
+		<article id="limbu">
+		<div class="container">
+		<div class ="newsletter">
+		<h1>contact us</h1>
+		<form>
+			FULLNAME:<br><input type="text" name="fullname"><br>
+			EMAIL:<br><input type="email" name="email"><br>
+			<textarea rows="5" cols="15" name="masssage"> type your message....</textarea><br>
+			<input type="button" name="send"value="send masssage">
+			 <input type="button" onclick="getLocation();" value="Get Location"/> 
+			   
+		</form>
+	</div>
+	<div class ="newsletter">
+		<h2>subscribe to our news letter</h2>
+		<input type="email" name="email" value="enter email"><br>
+        <input type="button" name="send"value="subscribe">
+	</div>
+	<div class ="newsletter">
+		<h2>Follow us:</h2>
+		<ul>
+			<li><img src="sap.jpg" width="40px" height="40"></li>0766754991 
+
+			<li><img src="logo.PNG" width="40px" height="40"></li>mt kilimanjaro
+			<li><img src="twiter.PNG" width="40px" height="40"></li>
+		</ul>
+	</div>
+	</div>
+	</article>
+
+	<p>copyright &copy; 2021 ALLY WILLY,ALLY SULLE</p>
+</footer>
+
+</body>
+</html>
